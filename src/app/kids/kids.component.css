@@ -1,0 +1,51 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100%;
+  transition: transform 0.9s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.carousel-controls button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.carousel-controls button svg {
+  width: 20px;
+  height: 20px;
+  fill: #000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-controls button:hover svg {
+  transform: scale(1.2);
+}
+
+h2{
+  margin-top: 20px;
+  background-color: darkkhaki;
+}

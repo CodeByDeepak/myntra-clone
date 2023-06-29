@@ -1,0 +1,17 @@
+<!-- <div class="carousel">
+  <div class="carousel-slide" [style.transform]="'translateX(' + slideOffset + '%)'">
+    <img style="height: auto;  " *ngFor="let image of images" [src]="image.src" [alt]="image.alt">
+  </div>
+</div> -->
+
+<div class="carousel">
+  <div class="carousel-slide" [style.transform]="'translateX(' + slideOffset + '%)'">
+    <img *ngFor="let image of images" [src]="image.src" [alt]="image.alt">
+  </div>
+  <!-- <div class="carousel-controls">
+    <button (click)="transitionToPreviousSlide()">Previous</button>
+    <button (click)="transitionToNextSlide()">Next</button>
+  </div> -->
+</div>
+
+
